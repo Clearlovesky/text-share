@@ -28,7 +28,7 @@
 	<script src="js/template.js"></script>
 	<!-- 模块1 model-1 本店信息 (渲染) -->
 	<script id="tpl-1" type="text/html">
-    <div class="img animated bounceInUp">
+    <div class="img animated bounce">
 			<img src="http://www.mffive.com:8080{{obj.backgroundFile}}" alt="">
 		</div>
 		<h1>{{obj.title}}</h1>
@@ -40,7 +40,7 @@
 		{{each obj.cardList as card}}
     <li>
 			<div class="left f-left">
-				<img class="animated bounceInUp" src="http://www.mffive.com:8080{{card.cardPicUrl}}" alt="">
+				<img class="animated bounce" src="http://www.mffive.com:8080{{card.cardPicUrl}}" alt="">
 			</div>
 			<div class="right f-left">
 				<h2>{{card.title}}</h2>
