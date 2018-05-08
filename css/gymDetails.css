@@ -3,7 +3,7 @@
 	.model-1{
 		max-width: 1024px;
 		margin: 0 auto;
-		padding-top: 6.5rem;
+		/*padding-top: 6.5rem;*/
     background-color: #eeeded;
 	}
 	.model-1 .img{
@@ -36,7 +36,7 @@
 	.model-1{
 		max-width: 1024px;
     margin: 0 auto;
-    padding-top: 4.5rem;
+    /*padding-top: 4.5rem;*/
     background-color: #eeeded;
 	}
 	.model-1 .img{
