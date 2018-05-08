@@ -37,11 +37,3 @@ document.addEventListener('DOMContentLoaded', function () {
         openApp() 
     }, false)  
 }, false);
-MobLink({
-        el: '',
-        path: 'demo/a',
-        params: {
-             key1: 'value1',
-             key2: 'value2',
-        }
-      })
