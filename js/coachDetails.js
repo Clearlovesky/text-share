@@ -13,8 +13,8 @@ function subStr(url) {
 var href = subStr(window.location.href);
 var cmpID=href.cmpID;
 var id=href.id;
-console.log(href);
-console.log(cmpID)
+// console.log(href);
+// console.log(cmpID)
 
 // 模块1 model-1 教练信息-------------------------------------
 $.ajax({
@@ -28,7 +28,7 @@ $.ajax({
     },
     success:function(data){
         var tplStr1 = template("tpl-1",data);
-        console.log(data);
+        // console.log(data);
         // console.log(tplStr1);
         $(".model-1").html(tplStr1);   
     },
@@ -48,7 +48,7 @@ $.ajax({
     },
     success:function(data){
         var tplStr2 = template("tpl-2",data);
-        console.log(data);
+        // console.log(data);
         // console.log(tplStr2);
         $(".mother").html(tplStr2);   
     },
@@ -69,7 +69,7 @@ $.ajax({
     },
     success:function(data){
         var tplStr3 = template("tpl-3",data);
-        console.log(data);
+        // console.log(data);
         // console.log(tplStr3);
         $(".father").html(tplStr3);   
     },

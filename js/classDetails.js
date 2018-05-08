@@ -13,8 +13,8 @@ function subStr(url) {
 var href = subStr(window.location.href);
 var coachID=href.coachID;
 var id=href.id;
-console.log(href);
-console.log(coachID)
+// console.log(href);
+// console.log(coachID)
 // 
 // 模块1 model-1 本店课程信息-------------------------------------
 $.ajax({
@@ -26,8 +26,8 @@ $.ajax({
     },
     success:function(data){
         var tplStr1 = template("tpl-1",data);
-        console.log(data);
-        console.log(tplStr1);
+        // console.log(data);
+        // console.log(tplStr1);
         $(".model-1").html(tplStr1);   
     },
     error:function(){
@@ -44,8 +44,8 @@ $.ajax({
     },
     success:function(data){
         var tplStr2 = template("tpl-2",data);
-        console.log(data);
-        console.log(tplStr2);
+        // console.log(data);
+        // console.log(tplStr2);
         $(".father").html(tplStr2);   
     },
     error:function(){

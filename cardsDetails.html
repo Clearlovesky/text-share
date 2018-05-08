@@ -12,59 +12,39 @@
 <body>
 	<!-- 模块1 model-1 本店会员卡信息-->
 	<div class="model-1">
-		<div class="img">
-			<img src="images/1.jpg" alt="">
-		</div>
-		<h1>武进职工健身中心年卡</h1>
-		<p>¥1400 <del>门市价¥2000</del></p>
-		<p class="description">蒂芬啊</p>
 	</div>
 	<!-- 模块2 model-2 商户信息+年卡内容+购买须知-->
 	<div class="model-2">
-		<ul class="father">
-			<li>
-				<h1>商户信息</h1>
-				<p><span>地点 : </span>延政中路5号长发大厦4楼</p>
-				<p><span>营业时间 : </span>周一至周日09：00-22：00</p>
-			</li>
-			<li>
-				<h1>此卡内容</h1>
-				<p>发芬啊</p>
-			</li>
-			<li>
-				<h1>购买须知</h1>
-				<p>发送芬啊</p>
-			</li>
-		</ul>
+		<ul class="father"></ul>
 	</div>
 	<!-- 底部 前往Five -->
 	<div class="lookmore">
-		<h1>到 Five 查看更多</h1>
+		<h1 class="animated bounceInLeft">到 Five 查看更多</h1>
 	</div>
 	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/cardsDetails.js"></script>
 	<script src="js/template.js"></script>
 	<!-- 模块1 model-1 本店会员卡信息 (渲染) -->
 	<script id="tpl-1" type="text/html">
-    <div class="img">
+    	<div class="img animated rubberBand">
 			<img src="http://www.mffive.com:8080{{obj.cardPicUrl}}" alt="">
 		</div>
-		<h1>{{obj.title}}</h1>
-		<p>¥{{obj.fivePrice}} <del>门市价¥{{obj.retailPrice}}</del></p>
-		<p class="description">{{obj.description}}</p>
+		<h1 class="animated rubberBand">{{obj.title}}</h1>
+		<p class="animated rubberBand">¥{{obj.fivePrice}} <del>门市价¥{{obj.retailPrice}}</del></p>
+		<p class="description animated rubberBand">{{obj.description}}</p>
   </script>
   <!-- 模块2 model-2 商户信息+年卡内容+购买须知 (渲染) -->
 	<script id="tpl-2" type="text/html">
-		<li>
+		<li class="animated rubberBand">
 			<h1>商户信息</h1>
 			<p><span>地点 : </span>{{obj.address}}</p>
 			<p><span>营业时间 : </span>{{obj.openTime}}</p>
 		</li>
-		<li>
+		<li class="animated rubberBand">
 			<h1>此卡内容</h1>
 			<p>{{obj.content}}</p>
 		</li>
-		<li>
+		<li class="animated rubberBand">
 			<h1>购买须知</h1>
 			<p>{{obj.buyNotice}}</p>
 		</li>

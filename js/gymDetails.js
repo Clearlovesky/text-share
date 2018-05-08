@@ -12,8 +12,8 @@ function subStr(url) {
 }
 var href = subStr(window.location.href);
 var cmpID=href.cmpID;
-console.log(href);
-console.log(cmpID)
+// console.log(href);
+// console.log(cmpID)
 // 模块1 model-1 本店信息-------------------------------------
 $.ajax({
     url:"http://www.mffive.com:8080/fiveCmpInfo/getFiveCmpById",
@@ -23,8 +23,8 @@ $.ajax({
     },
     success:function(data){
         var tplStr1 = template("tpl-1",data);
-        console.log(data);
-        console.log(tplStr1);
+        // console.log(data);
+        // console.log(tplStr1);
         $(".model-1").html(tplStr1);   
     },
     error:function(){
@@ -40,8 +40,8 @@ $.ajax({
     },
     success:function(data){
         var tplStr2 = template("tpl-2",data);
-        console.log(data);
-        console.log(tplStr2);
+        // console.log(data);
+        // console.log(tplStr2);
         $(".father").html(tplStr2);   
     },
     error:function(){

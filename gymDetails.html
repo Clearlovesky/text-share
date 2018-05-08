@@ -12,36 +12,11 @@
 <body>
 	<!-- 模块1 model-1 本店信息-->
 	<div class="model-1">
-		<!-- <div class="img">
-			<img src="images/1.jpg" alt="">
-		</div>
-		<h1>武进职工健身中心</h1>
-		<p><span>地点 : </span>延政中路5号长发大厦4楼</p>
-		<p><span>营业时间 : </span>周一至周日09：00-22：00</p> -->
 	</div>
 	<!-- 模块2 model-2 本店优惠-->
 	<div class="model-2">
-		<h1 class="animated bounceInRight
-">本店优惠</h1>
+		<h1 class="animated bounceInRight">本店优惠</h1>
 		<ul class="father">
-			<!-- <li>
-				<div class="left f-left">
-					<img src="images/1.jpg" alt="">
-				</div>
-				<div class="right f-left">
-					<h2>年卡</h2>
-					<p>¥1400 <del>¥2000</del></p>
-				</div>
-			</li>
-			<li>
-				<div class="left f-left">
-					<img src="images/1.jpg" alt="">
-				</div>
-				<div class="right f-left">
-					<h2>年卡</h2>
-					<p>¥1400 <del>¥2000</del></p>
-				</div>
-			</li> -->
 		</ul>
 	</div>
 	<!-- 底部 前往Five -->
@@ -53,7 +28,7 @@
 	<script src="js/template.js"></script>
 	<!-- 模块1 model-1 本店信息 (渲染) -->
 	<script id="tpl-1" type="text/html">
-    <div class="img animated bounceInRight">
+    <div class="img animated bounceInUp">
 			<img src="http://www.mffive.com:8080{{obj.backgroundFile}}" alt="">
 		</div>
 		<h1>{{obj.title}}</h1>
@@ -65,7 +40,7 @@
 		{{each obj.cardList as card}}
     <li>
 			<div class="left f-left">
-				<img class="animated bounceInLeft" src="http://www.mffive.com:8080{{card.cardPicUrl}}" alt="">
+				<img class="animated bounceInUp" src="http://www.mffive.com:8080{{card.cardPicUrl}}" alt="">
 			</div>
 			<div class="right f-left">
 				<h2>{{card.title}}</h2>

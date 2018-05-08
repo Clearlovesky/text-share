@@ -12,8 +12,8 @@ function subStr(url) {
 }
 var href = subStr(window.location.href);
 var drysalteryFileID=href.drysalteryFileID;
-console.log(href);
-console.log(href.drysalteryFileID)
+// console.log(href);
+// console.log(href.drysalteryFileID)
 // 模块1 model-1 图片+文章-------------------------------------
 $.ajax({
     url:"http://www.mffive.com:8080/drysaltery/getAppById",
@@ -23,7 +23,7 @@ $.ajax({
     },
     success:function(data){
         var tplStr1 = template("tpl-1",data);
-        console.log(data);
+        // console.log(data);
         // console.log(tplStr1);
         $(".model-1").html(tplStr1); 
         var picUrl=data.obj.picUrl;
