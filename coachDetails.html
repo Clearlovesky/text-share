@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>教练详情分享</title>
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/coachDetails.css">
+</head>
+<body>
+	<!-- 头部 前往Five -->
+	<header class="downlink animated bounceInRight">
+		<div class="left f-left">
+			<div class="img f-left"><img src="images/icon.png" alt=""></div>
+			<h1 class="title f-left">Five-运动</h1>
+		</div>
+		<div class="right f-right">
+			<button>立即下载</button>
+		</div>
+	</header>
+	<!-- 模块1 model-1 教练信息-->
+	<div class="model-1">
+		<!-- <div class="img">
+			<img src="images/1.jpg" alt="">
+		</div>
+		<h1>王水</h1>
+		<p><span>简介 : </span>哈哈哈哈</p> -->
+	</div>
+	<!-- 模块2 model-2 授课商户-->
+	<div class="model-2">
+		<h1>授课商户</h1>
+		<ul class="mother">
+			<!-- <li>
+				<div class="left f-left">
+					<img src="images/1.jpg" alt="">
+				</div>
+				<div class="right f-left">
+					<h2>单人一对哈哈哈哈哈</h2>
+					<p>武进区</p>
+				</div>
+			</li> -->
+		</ul>
+	</div>
+	<!-- 模块3 model-3 课程购买-->
+	<div class="model-3">
+		<h1>课程购买</h1>
+		<ul class="father">
+			<!-- <li>
+				<div class="left f-left">
+					<img src="images/1.jpg" alt="">
+				</div>
+				<div class="right f-left">
+					<h2>单人一对一哈哈哈哈哈哈</h2>
+					<p>¥1400 <del>¥2000</del></p>
+				</div>
+			</li>
+			<li>
+				<div class="left f-left">
+					<img src="images/1.jpg" alt="">
+				</div>
+				<div class="right f-left">
+					<h2>年卡</h2>
+					<p>¥1400 <del>¥2000</del></p>
+				</div>
+			</li> -->
+		</ul>
+	</div>
+	<!-- 底部 前往Five -->
+	<div class="lookmore downlink-1">
+		<h1>到 Five 查看更多</h1>
+	</div>
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/coachDetails.js"></script>
+	<script src="js/template.js"></script>
+	<script src="js/common.js"></script>
+	<!-- 模块1 model-1 教练信息 (渲染) -->
+	<script id="tpl-1" type="text/html">
+    <div class="img">
+			<img src="http://www.mffive.com:8080{{obj.avatar}}" alt="">
+		</div>
+		<h1>{{obj.name}}</h1>
+		<p><span>简介 : </span>{{obj.description}}</p>
+  </script>
+  <!-- 模块2 model-2 授课商户 (渲染) -->
+	<script id="tpl-2" type="text/html">
+    <li>
+			<div class="left f-left">
+				<img src="http://www.mffive.com:8080{{obj.logoFile}}" alt="">
+			</div>
+			<div class="right f-left">
+				<h2>{{obj.cmpTitle}}</h2>
+				<p>{{obj.district}}</p>
+			</div>
+		</li>
+  </script>
+  <!-- 模块3 model-3 课程购买 (渲染) -->
+  <script id="tpl-3" type="text/html">
+  	{{each obj.cmpCoachClassList as item}}
+    <li>
+			<div class="left f-left">
+				<img src="http://www.mffive.com:8080{{item.classLogo}}" alt="">
+			</div>
+			<div class="right f-left">
+				<h2>{{item.title}}</h2>
+				<p>¥{{item.fivePrice}} <del>¥{{item.retailPrice}}</del></p>
+			</div>
+		</li>
+		{{/each}}
+  </script>
+  <script type="text/javascript" src="//f.moblink.mob.com/3.0.1/moblink.js?appkey=2527af3e86b85"></script>
+</body>
+</html>
